@@ -25,7 +25,7 @@ EOF
 ```
 
 
-### version
+### See Version
 
 USAGE:
 ```
@@ -33,12 +33,14 @@ docker run -it --rm --env-file $HOME/.cloudflare/env solidnerd/cloudflare \
 --version
 ```
 
+### See help
+
 ```
 docker run -it --rm --env-file $HOME/.cloudflare/env solidnerd/cloudflare \
 --help
 ```
    
-### dns example update example
+### A DNS update example
 
 USAGE:
 ```
@@ -64,12 +66,12 @@ OPTIONS:
    --ttl "1"	TTL (1 = automatic)
    --proxy	proxy through CloudFlare (orange cloud)
 ```  
-### user
+### User
 
 USAGE:
 ```
 docker run -it --rm --env-file $HOME/.cloudflare/env solidnerd/cloudflare \
-flarectl user [command]
+info
 
 ```
 
@@ -80,6 +82,7 @@ COMMANDS:
    help, h	Shows a list of commands or help for one command
 ```
 
+---
 
 ### Making an Alias for easy start
 
