@@ -42,10 +42,17 @@ docker run -it --rm --env-file $HOME/.cloudflare/env solidnerd/cloudflare \
    
 ### A DNS update example
 
-USAGE:
+USAGE | type A record:
 ```
 docker run -it --rm --env-file $HOME/.cloudflare/env solidnerd/cloudflare \
 dns create-or-update --zone mysite.com --name mysite.com  --proxy --type A --content 11.22.33.44
+```
+
+USAGE | type CNAME record:
+
+```
+docker run -it --rm --env-file $HOME/.cloudflare/env solidnerd/cloudflare \
+dns create-or-update --zone mysite.com --name api.mysite.com  --proxy --type CNAME --content mysite.com
 ```
 
 COMMANDS:
