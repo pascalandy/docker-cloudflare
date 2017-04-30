@@ -47,21 +47,23 @@ dns create-or-update --zone mysite.com --name mysite.com  --proxy --type A --con
 ```
 
 COMMANDS:
+```
    list, l		List DNS records for a zone
    create, c		Create a DNS record
    update, u		Update a DNS record
    create-or-update, o	Create a DNS record, or update if it exists
    delete, d		Delete a DNS record
    help, h		Shows a list of commands or help for one command
-   
+```
 OPTIONS:
+```
    --zone 	zone name
    --name 	record name
    --content 	record content
    --type 	record type
    --ttl "1"	TTL (1 = automatic)
    --proxy	proxy through CloudFlare (orange cloud)
-  
+```  
 ### user
 
 USAGE:
@@ -72,10 +74,11 @@ flarectl user [command]
 ```
 
 COMMANDS:
+```
    info, i	User details
    update, u	Update user details
    help, h	Shows a list of commands or help for one command
-
+```
 
 
 ### Making an Alias for easy start
